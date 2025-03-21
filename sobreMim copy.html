@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Meta tags para configuração do documento -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para dispositivos móveis -->
+    <title>Sobre Mim - Meu Portfólio</title> <!-- Título da página exibido na aba do navegador -->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o CSS do Bootstrap, um framework para estilização e responsividade -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link para o Font Awesome, uma biblioteca de ícones -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link para o arquivo CSS personalizado -->
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Meu Portfólio</a> <!-- Logo ou nome do portfólio -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> <!-- Botão de toggle para o menu em dispositivos móveis -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Links de navegação -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfólio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section with Parallax -->
+    <section id="home" class="parallax-section">
+        <div class="parallax-bg bg-1"></div> <!-- Imagem de fundo com efeito parallax -->
+        <div class="content">
+            <div class="container text-center">
+                <h1 class="display-4 fw-bold">Olá, eu sou Leandro Mariano Junior</h1> <!-- Título principal -->
+                <p class="lead">Não é a linguagem de programação que define o programador, mas sim sua lógica.</p>
+                <!-- Subtítulo -->
+                <a href="#sobre" class="btn btn-primary btn-lg mt-3">Saiba Mais</a> <!-- Botão de ação -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Sobre Mim</h2> <!-- Título da seção -->
+            <div class="row align-items-center">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="profile-img-container">
+                        <img src="img/profile.jpg" alt="Minha Foto" class="img-fluid rounded-circle profile-img">
+                        <!-- Imagem de perfil -->
+                        <div class="social-icons">
+                            <!-- Ícones de redes sociais -->
+                            <a href="https://www.linkedin.com/in/leandromarianojr/" class="social-icon"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/leandro-25" class="social-icon"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://www.instagram.com/izzy.leandro/" class="social-icon"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <p>Olá! Sou um entusiasta em tecnologia apaixonado por resolver problemas complexos e criar soluções
+                        baseadas em dados que atendam às necessidades reais.</p>
+                    <p>Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na FATEC, onde estou
+                        aprofundando meus conhecimentos em resolução de desafios tecnológicos.</p>
+                    <p>Além da minha experiência prática, possuo conhecimentos em diversas linguagens de programação,
+                        como C, C++, Java, Javascript, Python, HTML, CSS e SQL.</p>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled bio-list">
+                                <!-- Lista de informações pessoais -->
+                                <li><i class="fas fa-graduation-cap"></i> Ciência da Computação</li>
+                                <li><i class="fas fa-trophy"></i> Campeão RoboCode 2019 FMPFM</li>
+                                <li><i class="fas fa-university"></i> Fatec Mogi Mirim, 5° semestre</li>
+                                <li><i class="fas fa-briefcase"></i> Suporte, Analise de dados </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled bio-list">
+                                <!-- Lista de certificações -->
+                                <li><i class="fas fa-certificate"></i> Scrum Fundamentals</li>
+                                <li><i class="fas fa-certificate"></i> Extreme Programming Foundation</li>
+                                <li><i class="fas fa-certificate"></i> Chaos Engineering Practitioner</li>
+                                <li><i class="fas fa-certificate"></i> Six Sigma Yellow Belt</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section with Parallax -->
+    <section id="habilidades" class="parallax-section">
+        <div class="parallax-bg bg-2"></div> <!-- Imagem de fundo com efeito parallax -->
+        <div class="content py-5">
+            <div class="container">
+                <h2 class="text-center text-white mb-5">Minhas Habilidades</h2> <!-- Título da seção -->
+                <div class="skills-container">
+
+
+                    <!-- Outras seções de habilidades com badges -->
+
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <h4 class="text-white mb-3">Linguagens & Frameworks</h4>
+                            <p align="left">
+                                <code><img width="100%" src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"></code>
+                                <code><img width="100%" src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white"></code>
+                                <code><img width="100%" src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white"></code>
+                                <code><img width="100%" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"></code>
+                                <code><img width="100%" src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white"></code>
+                                <code><img width="100%" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></code>
+
+                                <code><img width="100%" src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white"></code>
+                                <code><img width="100%" src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"></code>
+                                <code><img width="100%" src="https://img.shields.io/badge/Ionic-%233880FF.svg?style=for-the-badge&logo=Ionic&logoColor=white"></code>
+                                <code><img width="100%" src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"></code>
+                                <code><img width="100%" src="https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white"></code>
+                                <code><img width="100%" src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"></code>
+                                <code><img width="100%" src="https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D"></code>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <h4 class="text-white mb-3">Ferramentas de Desenvolvimento</h4>
+                            <p align="left">
+                                <code><img width="100%" src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"></code>
+                                <code><img width="100%" src="https://img.shields.io/badge/CLion-black?style=for-the-badge&logo=clion&logoColor=white"></code>
+                                <code><img width="100%" src="https://img.shields.io/badge/Google%20Colab-%23F9A825.svg?style=for-the-badge&logo=googlecolab&logoColor=white"></code>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="text-white mb-3">Banco de dados</h4>
+                            <p align="left">
+                                <code><img width="100%" src="https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34"></code>
+                                <code><img width="100%" src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white"></code>
+                                <code><img width="100%" src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white"></code>
+                                <code><img width="100%" src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white"></code>
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Meu Portfólio</h2> <!-- Título da seção -->
+            <div class="row g-4">
+                <!-- Cards de projetos -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="https://github.com/leandro-25/Compass-PB-Leandro" class="text-decoration-none">
+                        <div class="card portfolio-card h-100">
+                            <img src="img/dash.png" class="card-img-top" alt="Projeto 1"> <!-- Imagem do projeto -->
+                            <div class="card-body">
+                                <h5 class="card-title">ANALISE DE DADOS</h5> <!-- Título do projeto -->
+                                <p class="card-text">Como a relação entre o orçamento e a receita dos filmes da franquia
+                                    Star Wars varia ao longo do tempo, e como os filmes da saga principal se comparam
+                                    com os spin-offs em termos de desempenho financeiro e recepção crítica</p>
+                                <!-- Descrição do projeto -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Outros cards de projetos -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="https://github.com/leandro-25/POO_PROJETO_FINAL" class="text-decoration-none">
+                        <div class="card portfolio-card h-100">
+                            <img src="img/Sem título.png" class="card-img-top" alt="Projeto 2">
+                            <div class="card-body">
+                                <h5 class="card-title">CRUD</h5>
+                                <p class="card-text">sistema CRUD (Create, Read, Update, Delete) para gerenciamento de
+                                    jogadores de futebol, desenvolvido em Java utilizando o Spring Framework</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="https://github.com/leandro-25/IA_Controle" class="text-decoration-none">
+                        <div class="card portfolio-card h-100">
+                            <img src="img/opencv.png" class="card-img-top" alt="Projeto 3">
+                            <div class="card-body">
+                                <h5 class="card-title">OpenCV</h5>
+                                <p class="card-text">visão computacional e reconhecimento de gestos de mão para
+                                    controlar duas funcionalidades em uma máquina Windows.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Parallax -->
+    <section id="contato" class="parallax-section">
+        <div class="parallax-bg bg-3"></div> <!-- Imagem de fundo com efeito parallax -->
+        <div class="content py-5">
+            <div class="container">
+                <h2 class="text-center text-white mb-5">Entre em Contato</h2> <!-- Título da seção -->
+                <div class="row">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <form class="contact-form">
+                            <!-- Formulário de contato -->
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Seu Nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Seu Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Assunto" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="5" placeholder="Sua Mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                            <!-- Botão de envio -->
+                        </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-info">
+                            <!-- Informações de contato -->
+                            <div class="info-item mb-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h5>Localização</h5>
+                                    <p>Mogi Guaçu, SP - Brasil</p>
+                                </div>
+                            </div>
+                            <div class="info-item mb-4">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h5>Email</h5>
+                                    <p>lemariano25@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="info-item mb-4">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h5>Telefone</h5>
+                                    <p>+55 (19) 99672-6603</p>
+                                </div>
+                            </div>
+                            <div class="social-links">
+                                <!-- Ícones de redes sociais -->
+                                <a href="https://www.instagram.com/izzy.leandro/" class="social-link"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/leandromarianojr/" class="social-link"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                                <a href="https://github.com/leandro-25" class="social-link"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p> <!-- Rodapé -->
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

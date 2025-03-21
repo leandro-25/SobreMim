@@ -1,0 +1,377 @@
+/* General Styles */
+:root {
+    --primary-color: #4e73df; /* Cor primária (azul) */
+    --secondary-color: #1cc88a; /* Cor secundária (verde) */
+    --dark-color: #5a5c69; /* Cor escura (cinza) */
+    --light-color: #f8f9fc; /* Cor clara (branco) */
+    --hover-primary: #375ad3; /* Cor primária ao passar o mouse */
+    --transparent-white-bg: rgba(255, 255, 255, 0.1); /* Fundo branco transparente */
+    --transparent-white-bg-hover: rgba(255, 255, 255, 0.2); /* Fundo branco transparente ao passar o mouse */
+    --standard-transition: 0.3s ease; /* Transição padrão para animações */
+    --standard-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra padrão */
+    --hover-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+    --border-radius-standard: 5px; /* Bordas arredondadas padrão */
+    --border-radius-circle: 50%; /* Bordas arredondadas em círculo */
+}
+
+/* Estilos gerais do corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte padrão */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    color: #333; /* Cor do texto */
+    overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
+/* Estilos para títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700; /* Peso da fonte (negrito) */
+}
+
+/* Estilos para seções */
+section {
+    padding: 80px 0; /* Espaçamento interno das seções */
+}
+
+/* Estilos para botões */
+.btn-primary, .btn-outline-primary, .social-link {
+    transition: transform var(--standard-transition), background-color var(--standard-transition); /* Transição suave */
+    border-radius: var(--border-radius-standard); /* Bordas arredondadas */
+}
+
+.btn-primary, .btn-outline-primary:hover {
+    background-color: var(--primary-color); /* Cor de fundo do botão primário */
+    border-color: var(--primary-color); /* Cor da borda do botão primário */
+}
+
+.btn-outline-primary {
+    color: var(--primary-color); /* Cor do texto do botão outline */
+    border-color: var(--primary-color); /* Cor da borda do botão outline */
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-primary); /* Cor de fundo ao passar o mouse */
+    border-color: var(--hover-primary); /* Cor da borda ao passar o mouse */
+}
+
+/* Estilos para ícones sociais */
+.social-icon, .social-link {
+    display: inline-block; /* Exibição em linha */
+    width: 40px; /* Largura do ícone */
+    height: 40px; /* Altura do ícone */
+    line-height: 40px; /* Centraliza o ícone verticalmente */
+    text-align: center; /* Centraliza o ícone horizontalmente */
+    border-radius: var(--border-radius-circle); /* Bordas arredondadas em círculo */
+    margin: 0 5px; /* Margem entre ícones */
+    background-color: var(--transparent-white-bg); /* Fundo transparente */
+    color: #fff; /* Cor do ícone */
+    transition: transform var(--standard-transition), background-color var(--standard-transition); /* Transição suave */
+}
+
+.social-icon {
+    background-color: var(--primary-color); /* Cor de fundo do ícone social */
+}
+
+.social-icon:hover, .social-link:hover {
+    transform: translateY(-5px); /* Efeito de levantar ao passar o mouse */
+    background-color: var(--secondary-color); /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos para barras de progresso */
+.progress-bar, .progress {
+    background-color: var(--primary-color); /* Cor de fundo da barra de progresso */
+    border-radius: var(--border-radius-standard); /* Bordas arredondadas */
+}
+
+/* Estilos para a barra de navegação */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+    transition: background-color var(--standard-transition); /* Transição suave */
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.95); /* Fundo mais escuro ao rolar a página */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra ao rolar a página */
+}
+
+.navbar-brand {
+    font-weight: 700; /* Peso da fonte (negrito) */
+    font-size: 1.5rem; /* Tamanho da fonte */
+}
+
+.nav-link {
+    font-weight: 500; /* Peso da fonte */
+    padding: 0.5rem 1rem; /* Espaçamento interno */
+    transition: color var(--standard-transition); /* Transição suave */
+}
+
+.nav-link:hover {
+    color: var(--primary-color); /* Cor ao passar o mouse */
+}
+
+/* Estilos para seções com efeito parallax */
+.parallax-section {
+    position: relative; /* Posicionamento relativo */
+    height: 100vh; /* Altura da seção (100% da viewport) */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa a seção */
+    display: flex; /* Layout flexível */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+.parallax-bg {
+    position: absolute; /* Posicionamento absoluto */
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    background-size: cover; /* Cobre todo o espaço */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Efeito parallax */
+    z-index: -1; /* Coloca atrás do conteúdo */
+}
+
+.parallax-section .content {
+    z-index: 1; /* Coloca na frente do fundo */
+    width: 100%; /* Largura total */
+    color: #fff; /* Cor do texto */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra no texto */
+}
+
+/* Imagens de fundo para as seções parallax */
+.bg-1 { background-image: url('../img/pinterest-video.gif'); }
+.bg-2 { background-image: url('../img/ling.jpg'); }
+.bg-3 { background-image: url('../img/conta.jpg'); }
+
+/* Estilos para a seção "Sobre Mim" */
+.profile-img-container {
+    position: relative; /* Posicionamento relativo */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.profile-img {
+    width: 250px; /* Largura da imagem */
+    height: 250px; /* Altura da imagem */
+    object-fit: cover; /* Cobre o espaço sem distorcer */
+    border: 5px solid #fff; /* Borda branca */
+    box-shadow: var(--standard-shadow); /* Sombra padrão */
+    transition: transform var(--standard-transition); /* Transição suave */
+}
+
+.profile-img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.social-icons {
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Estilos para a seção de habilidades */
+.skill-item {
+    background-color: var(--transparent-white-bg); /* Fundo transparente */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: var(--border-radius-standard); /* Bordas arredondadas */
+    color: #fff; /* Cor do texto */
+}
+
+.skill-item .progress {
+    height: 10px; /* Altura da barra de progresso */
+}
+
+/* Estilos para a seção de portfólio */
+.portfolio-card {
+    transition: transform var(--standard-transition), box-shadow var(--standard-transition); /* Transição suave */
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+.portfolio-card:hover {
+    transform: translateY(-10px); /* Efeito de levantar ao passar o mouse */
+    box-shadow: var(--hover-shadow); /* Sombra ao passar o mouse */
+}
+
+a.text-decoration-none {
+    color: inherit; /* Mantém a cor do texto */
+}
+
+a.text-decoration-none:hover .card-title {
+    color: var(--primary-color); /* Cor ao passar o mouse */
+}
+
+a.text-decoration-none .btn-outline-primary:hover {
+    background-color: var(--primary-color); /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+}
+
+.portfolio-card img {
+    height: 200px; /* Altura da imagem */
+    object-fit: cover; /* Cobre o espaço sem distorcer */
+}
+
+/* Estilos para o formulário de contato */
+.contact-form .form-control {
+    background-color: var(--transparent-white-bg); /* Fundo transparente */
+    border: none; /* Remove a borda */
+    color: #fff; /* Cor do texto */
+    padding: 12px 15px; /* Espaçamento interno */
+    border-radius: var(--border-radius-standard); /* Bordas arredondadas */
+}
+
+.contact-form .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Cor do placeholder */
+}
+
+.contact-form .form-control:focus {
+    background-color: var(--transparent-white-bg-hover); /* Fundo ao focar */
+    box-shadow: none; /* Remove a sombra */
+}
+
+/* Estilos para a seção de contato */
+.contact-info {
+    background-color: var(--transparent-white-bg); /* Fundo transparente */
+    padding: 30px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    height: 100%; /* Altura total */
+}
+
+.info-item {
+    display: flex; /* Layout flexível */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    color: #fff; /* Cor do texto */
+}
+
+.info-item i {
+    font-size: 1.5rem; /* Tamanho do ícone */
+    margin-right: 15px; /* Espaçamento à direita */
+    color: var(--secondary-color); /* Cor do ícone */
+}
+
+.social-links {
+    margin-top: 30px; /* Espaçamento superior */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+/* Estilos responsivos */
+@media (max-width: 992px) {
+    .parallax-section {
+        height: auto; /* Altura automática */
+        min-height: 100vh; /* Altura mínima */
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 60px 0; /* Espaçamento interno reduzido */
+    }
+
+    .profile-img {
+        width: 200px; /* Largura reduzida */
+        height: 200px; /* Altura reduzida */
+    }
+
+    .parallax-section .content h1 {
+        font-size: 2.5rem; /* Tamanho da fonte reduzido */
+    }
+
+    .skills-container code img {
+        width: 45% !important; /* Largura reduzida */
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-img {
+        width: 150px; /* Largura reduzida */
+        height: 150px; /* Altura reduzida */
+    }
+
+    .parallax-section .content h1 {
+        font-size: 2rem; /* Tamanho da fonte reduzido */
+    }
+
+    .social-icon, .social-link {
+        width: 35px; /* Largura reduzida */
+        height: 35px; /* Altura reduzida */
+        line-height: 35px; /* Centralização vertical */
+        font-size: 0.9rem; /* Tamanho da fonte reduzido */
+    }
+
+    .skills-container code img {
+        width: 100% !important; /* Largura total */
+    }
+}
+
+/* Estilos para detalhes biográficos */
+.bio-details p {
+    margin-bottom: 10px; /* Espaçamento inferior */
+    display: flex; /* Layout flexível */
+    align-items: flex-start; /* Alinha os itens ao topo */
+}
+
+.bio-icon {
+    font-size: 1.2rem; /* Tamanho do ícone */
+    margin-right: 10px; /* Espaçamento à direita */
+    min-width: 24px; /* Largura mínima */
+    display: inline-block; /* Exibição em linha */
+}
+
+.bio-details strong {
+    font-weight: 600; /* Peso da fonte (semi-negrito) */
+    margin-right: 5px; /* Espaçamento à direita */
+}
+
+/* Estilos para a lista biográfica */
+.bio-list li {
+    margin-bottom: 12px; /* Espaçamento inferior */
+    position: relative; /* Posicionamento relativo */
+    padding-left: 25px; /* Espaçamento à esquerda */
+}
+
+.bio-list li i {
+    position: absolute; /* Posicionamento absoluto */
+    left: 0; /* Alinha à esquerda */
+    top: 4px; /* Alinha ao topo */
+    color: var(--primary-color); /* Cor do ícone */
+}
+
+/* Estilos para os badges de habilidades */
+.skills-container {
+    background-color: rgba(255, 255, 255, 0.178); /* Fundo transparente */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 25px; /* Espaçamento interno */
+    box-shadow: var(--standard-shadow); /* Sombra padrão */
+}
+
+.skills-container h4 {
+    font-size: 1.2rem; /* Tamanho da fonte */
+    border-left: 4px solid var(--primary-color); /* Borda à esquerda */
+    padding-left: 10px; /* Espaçamento à esquerda */
+    color: #3a3a3a; /* Cor do texto */
+}
+
+.skills-container .text-white {
+    color: #ffffff !important; /* Cor do texto (branco) */
+}
+
+.skills-container code {
+    background: none; /* Remove o fundo */
+    padding: 0; /* Remove o espaçamento interno */
+    margin: 5px; /* Espaçamento externo */
+    display: inline-block; /* Exibição em linha */
+    flex-grow: 0; /* Não cresce */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+.skills-container img {
+    border-radius: var(--border-radius-standard); /* Bordas arredondadas */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform var(--standard-transition); /* Transição suave */
+}
+
+.skills-container img:hover {
+    transform: translateY(-5px); /* Efeito de levantar ao passar o mouse */
+}
+
+.skills-container p {
+    display: flex; /* Layout flexível */
+    flex-wrap: wrap; /* Quebra de linha */
+    justify-content: flex-start; /* Alinha à esquerda */
+    gap: 15px; /* Espaçamento entre itens */
+}
